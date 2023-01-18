@@ -1,0 +1,16 @@
+function countLetters(string) {
+  let counts = [];
+  for (let i = 0; i < string.length; i++) {
+    let letter = string[i];
+    if (counts[letter]) {
+      counts[letter]++;
+    } else {
+      counts[letter] = 1;
+    }
+  }
+  return counts;
+}
+
+let string = prompt("Enter your name: ");
+
+console.log(countLetters(string));
