@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class Employee
+{
+
+public:
+    int eid;
+    string designation;
+    int basic;
+    void getData(){
+        cout<<"Enter eid"<<endl;
+        cin>>eid;
+        cout<<"Enter Designation"<<endl;
+        cin>>designation;
+        cout<<"Enter Basic"<<endl;
+        cin>>basic;
+
+    }
+    void displayData(){
+        cout<<"Employee eid: "<<eid<<" Designation :  "<< designation<<" Basic :"<<basic;
+    }
+};
+
+int main()
+{
+    Employee e1;
+    e1.getData();
+    e1.displayData();
+
+    return 0;
+}
