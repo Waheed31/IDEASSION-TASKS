@@ -1,0 +1,17 @@
+let a = [];
+const b = 5;
+
+const input = prompt("Enter values for the array: ");
+const inputArr = Number(input.split(" "));
+
+for (let i = 0; i < inputArr.length; i++) {
+  a.push(inputArr[i]);
+}
+
+for (let i = 0; i < a.length; i++) {
+  for (let j = i + 1; j < a.length; j++) {
+    if (a[i] + a[j] === b) {
+      console.log(`Index positions: ${i} and ${j}`);
+    }
+  }
+}
